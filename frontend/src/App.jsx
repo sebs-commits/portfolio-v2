@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import React from "react";
+import './styles/App.css'
 
-function App() {
 
+
+const App = () => {
   return (
-    <>
-      <p>Hello World</p>
-    </>
+    <div className="LeftContainer">
+      
+    </div>
   )
-}
+};
 
-export default App
+export default App;
