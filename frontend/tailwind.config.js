@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        display: ['"Chalkboard SE"', '"Comic Sans MS"', "cursive"],
+        body: ["Roboto", "Arial", "sans-serif"],
+        main: ['"Comic Sans MS"'],
+      },
+    },
   },
-  plugins: [require('daisyui'),],
-}
-
+  plugins: [require("daisyui")],
+};
