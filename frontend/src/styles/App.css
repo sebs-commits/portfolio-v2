@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@layer base {
+  html {
+    font-family: "Roboto", Arial, sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Chalkboard SE", "Comic Sans MS", cursive;
+  }
+}
+
+body {
+  @apply bg-yellow-200;
+  color: black;
+  font-family: "Comic Sans MS";
+}
