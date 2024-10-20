@@ -10,6 +10,9 @@ const Footer = () => {
       <p className="text-center relative z-10 text-black">
         Made with ❤️ by Sebastian
       </p>
+      <div className="absolute -top-6 -left-4 w-16 h-16 bg-red-400 border-2 border-black transform rotate-12 flex items-center justify-center">
+        {" "}
+      </div>
     </footer>
   );
 };
