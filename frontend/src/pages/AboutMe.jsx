@@ -3,7 +3,7 @@ import subjectImage from "../assets/Subject.png";
 
 const AboutMe = () => {
   return (
-    <div className="relative p-4 sm:p-8 bg-yellow-400 border-2 border-black rounded-none">
+    <div className="relative p-4 sm:p-8 bg-yellow-400 border-2 border-black rounded-none font-main">
       {/* shapes */}
       <div className="absolute top-0 right-0 w-20 h-20 bg-red-500 border-2 border-black transform rotate-45"></div>
       <div className="absolute bottom-0 left-0 w-16 h-16 bg-blue-500 border-2 border-black rounded-full"></div>
@@ -24,13 +24,23 @@ const AboutMe = () => {
             About Me
           </h2>
           <p className="text-xl mb-4 text-black font-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Hey! I'm -
+            <span
+              className="text-1xl  text-white stroke-black stroke-1"
+              style={{ WebkitTextStroke: "1px black" }}
+            >
+              Sebastian!
+            </span>
+            [Lets insert basic introduction seen on pretty much all student SWE
+            portfolio's.]
           </p>
           <p className="text-xl text-black font-bold">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nisi
-            consequatur quisquam quo, totam vel et alias sed amet earum libero
-            ipsum nobis labore voluptatem facilis. Veritatis amet sed incidunt?.
+            Jokes aside, I'm currently a Software Engineering student at
+            Centennial College. I have a strong passion for healthcare and
+            technology. I would someday like to work on software that lets
+            healthcare professionals work more efficiently and spend less time
+            yelling at their computers. Outside of school, I often ponder why
+            Ctrl-Z doesn't work in real life.
           </p>
           <button className="mt-6 px-6 py-3 bg-green-400 text-black font-bold text-xl border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
             Get in Touch!
