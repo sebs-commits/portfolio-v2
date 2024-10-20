@@ -24,14 +24,18 @@ const AboutMe = () => {
             About Me
           </h2>
           <p className="text-xl mb-4 text-black font-bold">
-            Hey! I'm -
-            <span
-              className="text-1xl  text-white stroke-black stroke-1"
-              style={{ WebkitTextStroke: "1px black" }}
-            >
-              Sebastian!
-            </span>
-            [Lets insert basic introduction seen on pretty much all student SWE
+            Hey! I'm-
+            <div className="relative inline-block">
+              
+              <div className="absolute -left-1 -top-4 w-32 h-16 bg-blue-500 border-2 border-black transform skew-x-14 z-0 rotate-1"></div>
+              <span
+                className="text-4xl font-black text-yellow-300 relative z-10 transform -rotate-2"
+                style={{ textShadow: "2px 2px 0px black" }}
+              >
+                Sebastian!
+              </span>
+            </div>
+                [Lets insert basic introduction seen on pretty much all student SWE
             portfolio's.]
           </p>
           <p className="text-xl text-black font-bold">
