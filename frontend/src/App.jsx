@@ -5,6 +5,9 @@ import Navbar from "./components/NavBar";
 import ScrollingText from "./components/ScrollingText";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
+import emailjs from "@emailjs/browser";
+
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const App = () => {
   return (
