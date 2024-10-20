@@ -29,7 +29,7 @@ const ScrollingText = () => {
   };
 
   return (
-    <div className="border-4 border-black bg-yellow-300 p-4 overflow-hidden">
+    <div className="border-4 border-black bg-teal-300 p-4 overflow-hidden">
       <Marquee velocity={100} minScale={0.7} resetAfterTries={200}>
         {tools.map((tool, index) => (
           <div
