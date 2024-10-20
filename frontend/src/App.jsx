@@ -2,7 +2,8 @@ import "./styles/App.css";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Navbar from "./components/NavBar";
-import ScrollingText from './components/ScrollingText';
+import ScrollingText from "./components/ScrollingText";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,13 +15,13 @@ const App = () => {
       <main className="flex-grow bg-green-50 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-6 sm:p-10 z-10 mb-20">
         <div className="mb-12">
           <AboutMe />
-          
         </div>
         <div className="mb-4">
           <ScrollingText />
         </div>
         <div className="mb-12">
           <Projects />
+          <Footer />
         </div>
       </main>
 
@@ -34,7 +35,6 @@ const App = () => {
       </div>
 
       <Navbar />
-      
     </div>
   );
 };
