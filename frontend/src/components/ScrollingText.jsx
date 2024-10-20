@@ -7,11 +7,29 @@ const ScrollingText = () => {
     "Git", "SQL", "C#", "AWS"
   ];
 
+  const colors = ['bg-red-400', 'bg-blue-400', 'bg-green-400', 'bg-yellow-400', 'bg-purple-400'];
+
+  // func to generate random rotation
+  const randomRotation = () => {
+    return Math.floor(Math.random() * 11) - 5; 
+  };
+
   return (
     <div className="border-4 border-black bg-yellow-300 p-4 overflow-hidden">
       <Marquee velocity={100} minScale={0.7} resetAfterTries={200}>
         {tools.map((tool, index) => (
-          <div key={index} className="inline-block mx-4 text-2xl font-bold text-black">
+          <div
+            key={index}
+            className={`
+              inline-block mx-4 px-4 py-2 
+              ${colors[index % colors.length]} 
+              text-black font-black text-xl 
+              border-4 border-black 
+              shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
+              transition-all duration-300 hover:rotate-0 hover:scale-105
+            `}
+            style={{ transform: `rotate(${randomRotation()}deg)` }}
+          >
             {tool}
           </div>
         ))}
