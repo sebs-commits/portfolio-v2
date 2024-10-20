@@ -1,8 +1,7 @@
 import "./styles/App.css";
-import Navbar from "./components/Navbar";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
-
+import Navbar from "./components/NavBar";
 const App = () => {
   return (
     <div className="min-h-screen p-4 sm:p-8 flex flex-col font-mono bg-indigo-200 relative overflow-hidden">

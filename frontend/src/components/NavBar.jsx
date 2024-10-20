@@ -1,6 +1,6 @@
 import "../styles/App.css";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-yellow-300 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-1 z-50 bg-opacity-50 backdrop-blur-md">
       <ul className="menu menu-horizontal p-2 font-main relative">
@@ -40,4 +40,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
