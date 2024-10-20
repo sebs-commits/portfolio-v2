@@ -1,4 +1,5 @@
 import "../styles/App.css";
+import { FaHome, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -9,23 +10,25 @@ const NavBar = () => {
             href="#home"
             className="text-black bg-green-400 hover:bg-yellow-400 font-black text-sm sm:text-xl uppercase tracking-wider px-2 sm:px-4 py-1 sm:py-2 border border-black sm:border-2 transition-all hover:translate-x-0.5 hover:translate-y-0.5 sm:hover:translate-x-1 sm:hover:translate-y-1 hover:shadow-none"
           >
-            About Me
+            <FaHome className="text-2xl sm:text-3xl" />
           </a>
         </li>
         <li className="mx-1 sm:mx-2">
           <a
-            href="#about"
+            href="https://github.com/sebs-commits"
+            target="_blank"
             className="text-black bg-green-400 hover:bg-yellow-400 font-black text-sm sm:text-xl uppercase tracking-wider px-2 sm:px-4 py-1 sm:py-2 border border-black sm:border-2 transition-all hover:translate-x-0.5 hover:translate-y-0.5 sm:hover:translate-x-1 sm:hover:translate-y-1 hover:shadow-none"
           >
-            Projects
+            <FaGithub className="text-2xl sm:text-3xl" />
           </a>
         </li>
         <li className="mx-1 sm:mx-2">
           <a
-            href="#services"
+            href="https://linkedin.com/in/"
+            target="_blank"
             className="text-black bg-green-400 hover:bg-yellow-400 font-black text-sm sm:text-xl uppercase tracking-wider px-2 sm:px-4 py-1 sm:py-2 border border-black sm:border-2 transition-all hover:translate-x-0.5 hover:translate-y-0.5 sm:hover:translate-x-1 sm:hover:translate-y-1 hover:shadow-none"
           >
-            Experience
+            <FaLinkedin className="text-2xl sm:text-3xl" />
           </a>
         </li>
       </ul>
