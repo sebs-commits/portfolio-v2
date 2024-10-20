@@ -4,6 +4,7 @@ import Projects from "./pages/Projects";
 import Navbar from "./components/NavBar";
 import ScrollingText from "./components/ScrollingText";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
         </div>
         <div className="mb-12">
           <Projects />
+        </div>
+        <div className="mb-12">
+          <ContactForm />
         </div>
         <div className="mt-px-6">
           <Footer />
