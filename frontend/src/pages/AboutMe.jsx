@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className="relative p-4 sm:p-8 bg-yellow-400 border-2 border-black rounded-none font-main">
       {/* shapes */}
       <div className="absolute top-0 right-0 w-20 h-20 bg-red-500 border-2 border-black transform rotate-45"></div>
-      <div className="absolute bottom-0 left-0 w-16 h-16 bg-blue-500 border-2 border-black rounded-full"></div>
+      <div className="absolute bottom-3 -left-3 w-20 h-20 bg-blue-500 border-2 border-black rounded-full"></div>
 
       <div className="relative flex flex-col sm:flex-row items-start gap-8">
         {/* image container */}
