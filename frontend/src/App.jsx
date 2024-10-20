@@ -21,6 +21,8 @@ const App = () => {
         </div>
         <div className="mb-12">
           <Projects />
+        </div>
+        <div className="mt-px-6">
           <Footer />
         </div>
       </main>
