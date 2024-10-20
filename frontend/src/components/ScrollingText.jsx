@@ -1,27 +1,41 @@
-import React from 'react';
-import Marquee from 'react-marquee-slider';
+import React from "react";
+import Marquee from "react-marquee-slider";
 
 const ScrollingText = () => {
   const tools = [
-    "JavaScript", "React", "Node.js", "Tailwind CSS", "HTML", "CSS", 
-    "Git", "SQL", "C#", "AWS"
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Tailwind CSS",
+    "HTML",
+    "CSS",
+    "Git",
+    "SQL",
+    "C#",
+    "AWS",
   ];
 
-  const colors = ['bg-red-400', 'bg-blue-400', 'bg-green-400', 'bg-yellow-400', 'bg-purple-400'];
+  const colors = [
+    "bg-red-400",
+    "bg-blue-400",
+    "bg-green-400",
+    "bg-yellow-400",
+    "bg-purple-400",
+  ];
 
   // func to generate random rotation
   const randomRotation = () => {
-    return Math.floor(Math.random() * 11) - 5; 
+    return Math.floor(Math.random() * 11) - 5;
   };
 
   return (
-    <div className="border-4 border-black bg-yellow-300 p-4 overflow-hidden">
+    <div className="border-4 border-black bg-teal-300 p-4 overflow-hidden">
       <Marquee velocity={100} minScale={0.7} resetAfterTries={200}>
         {tools.map((tool, index) => (
           <div
             key={index}
             className={`
-              inline-block mx-4 px-4 py-2 
+              inline-block mx-4 px-4 py-2 my-1 
               ${colors[index % colors.length]} 
               text-black font-black text-xl 
               border-4 border-black 
