@@ -23,7 +23,6 @@ const ScrollingText = () => {
     "bg-purple-400",
   ];
 
-  // func to generate random rotation
   const randomRotation = () => {
     return Math.floor(Math.random() * 11) - 5;
   };
@@ -41,8 +40,12 @@ const ScrollingText = () => {
               border-4 border-black 
               shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
               transition-all duration-300 hover:rotate-0 hover:scale-105
+              animate-bobbing
             `}
-            style={{ transform: `rotate(${randomRotation()}deg)` }}
+            style={{
+              transform: `rotate(${randomRotation()}deg)`,
+              animationDelay: `${index * 0.1}s`, // Add delay for each item
+            }}
           >
             {tool}
           </div>
