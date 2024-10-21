@@ -52,13 +52,11 @@ const App = () => {
                 <div className="mb-12" id="contact">
                   <ContactForm />
                 </div>
+                <Footer />
               </>
             } />
             <Route path="/project/:id" element={<ProjectDetails projects={projects} />} />
           </Routes>
-          <div className="mt-px-6">
-            <Footer />
-          </div>
         </main>
 
         <div className="absolute m-4 top-1/2 left-0 transform -translate-y-1/2 -translate-x-1/2 rotate-90">
