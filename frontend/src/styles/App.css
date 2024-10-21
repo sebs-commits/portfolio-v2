@@ -16,6 +16,9 @@
     font-family: "Chalkboard SE", "Comic Sans MS", cursive;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
 
 body {
   @apply bg-yellow-200;

@@ -46,9 +46,11 @@ const AboutMe = () => {
             yelling at their computers. Outside of school, I often ponder why
             Ctrl-Z doesn't work in real life.
           </p>
+          <a href="#contact">
           <button className="mt-6 px-6 py-3 bg-green-400 text-black font-bold text-xl border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
             Get in Touch!
           </button>
+          </a>
         </div>
       </div>
 

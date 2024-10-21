@@ -26,7 +26,7 @@ const App = () => {
         <div className="mb-12">
           <Projects />
         </div>
-        <div className="mb-12">
+        <div className="mb-12" id="contact">
           <ContactForm />
         </div>
         <div className="mt-px-6">
