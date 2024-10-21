@@ -1,9 +1,18 @@
 /* eslint-disable react/prop-types */
 
+
+const colors = [
+  "bg-red-400",
+  "bg-blue-400",
+  "bg-green-400",
+  "bg-yellow-400",
+  "bg-purple-400",
+];
+
 const ProjectCard = ({ title, description, image, tags }) => {
   return (
-    <div className="cursor-pointer relative w-72 h-96 bg-yellow-300 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden transform rotate-1 transition-all duration-300 hover:rotate-0">
-      <div className="h-1/2 overflow-hidden">
+    <div className="cursor-pointer relative w-96 h-auto bg-yellow-300 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden transform rotate-1 transition-all duration-300 hover:rotate-0">
+      <div className="h-48 overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -17,7 +26,7 @@ const ProjectCard = ({ title, description, image, tags }) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 bg-white border-2 border-black text-xs font-bold"
+              className={`${colors[index % colors.length]} px-2 py-1 border-2 border-black text-xs font-bold`}
             >
               {tag}
             </span>
