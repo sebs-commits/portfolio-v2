@@ -18,10 +18,11 @@
 }
 * {
   scroll-behavior: smooth;
+  font-family: "Comic Sans MS";
 }
 
 body {
   @apply bg-yellow-200;
   color: black;
-  font-family: "Comic Sans MS";
+
 }
