@@ -11,7 +11,7 @@ const colors = [
 
 const ProjectCard = ({ title, description, image, tags }) => {
   return (
-    <div className="cursor-pointer relative w-96 h-auto bg-yellow-300 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden transform rotate-1 transition-all duration-300 hover:rotate-0">
+    <div className="relative w-96 h-auto bg-yellow-300 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden transform rotate-1 transition-all duration-300 hover:rotate-0">
       <div className="h-48 overflow-hidden">
         <img
           src={image}
@@ -33,8 +33,6 @@ const ProjectCard = ({ title, description, image, tags }) => {
           ))}
         </div>
       </div>
-      {/* create a new tag in replacement of this shape */}
-      {/* <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-purple-500 border-2 border-black transform rotate-12 flex items-center justify-center"></div> */}
     </div>
   );
 };
