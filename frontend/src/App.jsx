@@ -15,16 +15,21 @@ const App = () => {
   const projects = [
     {
       id: 1,
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "https://picsum.photos/seed/project1/300/200",
+      title: "Quiz Application",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "https://picsum.photos/id/237/200/300",
+      date: "2024-01-01",
+      link: "https://www.google.com",
+      learnings: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       tags: ["React", "TailwindCSS", "Node.js"],
     },
     {
       id: 2,
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "https://picsum.photos/seed/project2/300/200",
+      title: "Patient Tracker",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "https://picsum.photos/id/237/200/300",
       tags: ["Vue", "Firebase", "Sass", "React", "TailwindCSS", "Node.js"],
     },
   ];
@@ -38,24 +43,30 @@ const App = () => {
 
         <main className="flex-grow bg-green-50 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-6 sm:p-10 z-10 mb-20">
           <Routes>
-            <Route path="/" element={
-              <>
-                <div className="mb-12">
-                  <AboutMe />
-                </div>
-                <div className="mb-4">
-                  <ScrollingText />
-                </div>
-                <div className="mb-12">
-                  <Projects projects={projects} />
-                </div>
-                <div className="mb-12" id="contact">
-                  <ContactForm />
-                </div>
-                <Footer />
-              </>
-            } />
-            <Route path="/project/:id" element={<ProjectDetails projects={projects} />} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <div className="mb-12">
+                    <AboutMe />
+                  </div>
+                  <div className="mb-4">
+                    <ScrollingText />
+                  </div>
+                  <div className="mb-12">
+                    <Projects projects={projects} />
+                  </div>
+                  <div className="mb-12" id="contact">
+                    <ContactForm />
+                  </div>
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/project/:id"
+              element={<ProjectDetails projects={projects} />}
+            />
           </Routes>
         </main>
 
