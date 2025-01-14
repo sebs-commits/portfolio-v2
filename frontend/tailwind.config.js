@@ -17,10 +17,35 @@ export default {
       animation: {
         bobbing: "bobbing 1s ease-in-out infinite",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#000000',
+            h1: {
+              color: '#000000',
+            },
+            h2: {
+              color: '#000000',
+            },
+            h3: {
+              color: '#000000',
+            },
+            strong: {
+              color: '#000000',
+            },
+            a: {
+              color: '#000000',
+            },
+            li: {
+              color: '#000000',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [
     require("daisyui"),
-    require("@tailwindcss/typography")
+    require("@tailwindcss/typography"),
   ],
 };
