@@ -8,9 +8,9 @@ const AboutMe = () => {
       <div className="absolute top-0 right-0 w-20 h-20 bg-red-500 border-2 border-black transform rotate-45"></div>
       <div className="absolute bottom-3 -left-3 w-20 h-20 bg-blue-500 border-2 border-black rounded-full"></div>
 
-      <div className="relative flex flex-col sm:flex-row items-start gap-8">
+      <div className="relative flex flex-col lg:flex-row items-start gap-8">
         {/* image container */}
-        <div className="relative w-64 h-64 sm:w-80 sm:h-80 bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden z-10 transform -rotate-3">
+        <div className="relative w-64 h-64 sm:w-80 sm:h-80 bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden z-10 transform -rotate-3 mx-auto lg:mx-0">
           <img
             src={subjectImage}
             alt="Placeholder"
