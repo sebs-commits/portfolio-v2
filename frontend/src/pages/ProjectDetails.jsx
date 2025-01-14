@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
-import { FaArrowLeft, FaCalendar, FaLink } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
+import ReactMarkdown from 'react-markdown';
+import projects from "../data/projects";
 
-const ProjectDetails = ({ projects }) => {
+const ProjectDetails = () => {
   const { id } = useParams();
   const project = projects.find((p) => p.id === parseInt(id));
 
@@ -19,10 +20,6 @@ const ProjectDetails = ({ projects }) => {
         </button>
       </Link>
 
-      <h1 className="text-6xl font-black mb-4 font-display">Project Details</h1>
-
-      <h2 className="text-5xl font-black mb-8 font-display">{project.title}</h2>
-
       <div className="mb-8 flex justify-center">
         <img
           src={project.image}
@@ -31,58 +28,22 @@ const ProjectDetails = ({ projects }) => {
         />
       </div>
 
-      <p className="text-xl mb-8 font-body">{project.description}</p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 className="text-2xl font-bold mb-4">Project Details</h3>
-          <ul className="space-y-2">
-            <li className="flex items-center">
-              <FaCalendar className="mr-2" />
-              <span>Date: {project.date || "Not specified"}</span>
-            </li>
-            <li className="flex items-center">
-              <FaLink className="mr-2" />
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Project Link
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-bold mb-4">Technologies Used</h3>
-          <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag, index) => (
-              <span
-                key={index}
-                className="bg-green-400 px-3 py-1 border-2 border-black text-sm font-bold"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
+      <div className="prose prose-lg max-w-none">
+        <ReactMarkdown>{project.content}</ReactMarkdown>
       </div>
 
-      {project.challenges && (
-        <div className="mb-8">
-          <h3 className="text-2xl font-bold mb-4">Challenges</h3>
-          <p className="text-lg font-body">{project.challenges}</p>
+      <div className="mt-8">
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="bg-green-400 px-3 py-1 border-2 border-black text-sm font-bold"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
-      )}
-
-      {project.learnings && (
-        <div className="mb-8">
-          <h3 className="text-2xl font-bold mb-4">What I Learned</h3>
-          <p className="text-lg font-body">{project.learnings}</p>
-        </div>
-      )}
+      </div>
     </div>
   );
 };

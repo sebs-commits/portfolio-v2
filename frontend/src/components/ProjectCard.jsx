@@ -8,7 +8,7 @@ const colors = [
 ];
 const ProjectCard = ({
   title,
-  description,
+  shortDescription,
   image,
   tags,
   isExpanded,
@@ -36,7 +36,7 @@ const ProjectCard = ({
         <div className="p-4 flex-1">
           <h3 className="text-2xl font-bold mb-2 font-display">{title}</h3>
           <p className="text-sm mb-4 font-body">
-            {isExpanded ? description : `${description.slice(0, 100)}...`}
+            {isExpanded ? shortDescription : `${shortDescription.slice(0, 100)}...`}
           </p>
           <div className="flex flex-wrap gap-2">
             {tags.map((tag, index) => (
@@ -44,7 +44,7 @@ const ProjectCard = ({
                 key={index}
                 className={`${
                   colors[index % colors.length]
-                }  px-2 py-1 text-xs font-semibold border-2 border-black`}
+                } px-2 py-1 text-xs font-semibold border-2 border-black`}
               >
                 {tag}
               </span>

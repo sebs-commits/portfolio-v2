@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
+import projects from "../data/projects";
 
-// will add more later, this is sample data for now
-const Projects = ({ projects }) => {
+const Projects = () => {
   return (
     <div className="p-4 sm:p-8 bg-green-200 border-4 border-black">
       <h2 className="text-4xl sm:text-5xl font-black mb-6 sm:mb-8 font-display text-center">
