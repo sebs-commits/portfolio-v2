@@ -22,7 +22,7 @@ const App = () => {
       date: "2024-01-01",
       link: "https://www.google.com",
       learnings: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: ["React", "TailwindCSS", "Node.js"],
+      tags: ["React", "TailwindCSS", "Node.js", "test"],
     },
     {
       id: 2,
